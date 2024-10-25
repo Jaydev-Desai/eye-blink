@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Detect the user's blink and wink using machine learning. Built with Tensorflow.js"
+    />
+    <meta
+      property="og:description"
+      content="Detect the user's blink and wink using machine learning. Built with Tensorflow.js"
+    />
+    <meta
+      property="twitter:description"
+      content="Detect the user's blink and wink using machine learning. Built with Tensorflow.js"
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/devdevcharlie/image/upload/v1612225468/Screenshot_2021-02-02_at_01.18.18_dcpjpo.png"
+    />
+
+
+    <title>Blink Detection</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    
+
+    <h1>Eye Blink Detector</h1>
+    <section class="info">
+      <p class="credit">
+        
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Jaydev Desai</a
+        >
+        -
+        <a
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+          >211130116011</a
+        >
+      </p>
+      <p class="instruction">
+        Blink intentionally to change the current color mode.
+      </p>
+      <p class="model-status">Machine learning model loading...</p>
+    </section>
+
+    <main>
+      <div id="main">
+        <video id="video" playsinline></video>
+        <div class="rate-container">
+          <div>
+            <span> Color mode: </span>
+            <span id="current-mode">Light</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
